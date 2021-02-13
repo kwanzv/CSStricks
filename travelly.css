@@ -1,5 +1,130 @@
-body {
-  background-color: #eee;
-  color: #e63a3a;
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Truculenta', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+button {
+  padding: 2rem 2rem;
+  background: #eee;
+  color: #333;
+  font-size: 1.8rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #333;
+  color: #eee;
+}
+
+h1 {
+  font-size: 3.6rem;
+}
+
+li, button, label, input, p {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 5rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+#main-head {
+  background: #333;
+  color: white;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 6vh;
+  width: 90%;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+#logo {
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 40rem;
+          flex: 2 1 40rem;
+}
+
+.showcase {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url("/img/landing-page.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("/img/landing-page.jpg");
+  min-height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.showcase h3 {
+  padding: 5rem;
+}
+
+@media screen and (max-width: 940px) {
+  html {
+    font-size: -45%;
+  }
+  nav {
+    text-align: center;
+  }
+  #logo {
+    padding: 1rem;
+  }
 }
 /*# sourceMappingURL=travelly.css.map */

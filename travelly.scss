@@ -1,4 +1,108 @@
-body {
-  color: rgb(230, 58, 58);
-  background-color: #eee;
+// Global styles 
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Truculenta', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+button {
+  padding: 2rem 2rem;
+  background: #eee;
+  color: #333;
+  font-size: 1.8rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #333;
+  color: #eee;
+}
+
+h1 {
+  font-size: 3.6rem;
+}
+
+li,button,label, input, p {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 5rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+#main-head {
+  background:#333;
+  color: white;
+}
+
+nav {
+  display: flex;
+  min-height: 6vh;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+nav ul {
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+#logo {
+  flex: 2 1 40rem;
+}
+
+.showcase {
+  background: linear-gradient(rgba(0,0,0,0.5),transparent),url('/img/landing-page.jpg');
+  min-height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.showcase h3 {
+  padding:5rem;
+}
+
+
+@media screen and (max-width: 940px) {
+  html {
+    font-size: -45%;
+  }
+
+  nav {
+    text-align: center;
+  }
+  #logo {
+    padding: 1rem;
+  }
+
 }
