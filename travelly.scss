@@ -26,20 +26,20 @@ button:hover {
 }
 
 h1 {
-  font-size: 3.6rem;
+  font-size: 8rem;
 }
 
 li,button,label, input, p {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 h3 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: normal;
 }
 
 h2 {
-  font-size: 5rem;
+  font-size: 3rem;
 }
 
 a {
@@ -54,7 +54,6 @@ a {
 
 nav {
   display: flex;
-  min-height: 6vh;
   width: 90%;
   margin: auto;
   align-items: center;
@@ -72,6 +71,7 @@ nav ul {
 
 #logo {
   flex: 2 1 40rem;
+  font-size: 3rem;
 }
 
 .showcase {
@@ -91,6 +91,60 @@ nav ul {
 .showcase h3 {
   padding:5rem;
 }
+
+// Benefits section
+
+#locations {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.5), transparent), url("/img/new-york-page.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  color: #333;
+  position: relative;
+  overflow: hidden;
+}
+
+.locations-head {
+  width: 90%;
+  margin:auto;
+}
+
+.locations-head h2 {
+  padding: 2rem 0rem;
+  text-decoration: underline;
+  text-decoration-thickness: 0.5rem;
+}
+
+.cloud {
+  position: absolute;
+  top:0%;
+  right: 0%;
+}
+
+.moving-cloud-1 {
+  z-index: -1;
+  width: 50%;
+  top: 10%;
+  animation: cloudy 3s alternate ease-in infinite;
+}
+
+.moving-cloud-2 {
+  width: 50%;
+  z-index: 1;
+  animation: cloudy 3s alternate ease-in-out infinite;
+  
+}
+
+@keyframes cloudy {
+  from {
+    transform: translate(10%, -10%);
+  } to {
+    transform: translate(0,0);
+  }
+}
+
 
 
 @media screen and (max-width: 940px) {
