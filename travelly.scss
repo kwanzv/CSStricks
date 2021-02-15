@@ -10,49 +10,41 @@ html {
   font-size: 62.5%;
 }
 
-button {
-  padding: 2rem 2rem;
-  background: #eee;
-  color: #333;
-  font-size: 1.8rem;
-  border: none;
-  border-radius: 1rem;
-  cursor: pointer;
-}
-
-button:hover {
-  background: #333;
-  color: #eee;
+h3,h2,p {
+  font-size: 2rem;
 }
 
 h1 {
-  font-size: 8rem;
+  font-size: 4rem;
 }
 
-li,button,label, input, p {
-  font-size: 3rem;
-}
-
-h3 {
-  font-size: 3rem;
-  font-weight: normal;
-}
-
-h4 {
+button {
+  padding: 1.5rem 1.5rem;
+  background: #eee;
+  color: #333;
   font-size: 1.5rem;
-}
-
-h2 {
-  font-size: 3rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  &:hover {
+    background: #333;
+    color: #eee;
+  }
 }
 
 a {
   color: white;
   text-decoration: none;
+  font-size: 1.2rem;
+&:hover {
+  text-decoration: underline;
+}
 }
 
+/* Nav + header */
+
 #main-head {
-  background:#333;
+  background:#343c44; 
   color: white;
 }
 
@@ -60,27 +52,27 @@ nav {
   display: flex;
   width: 90%;
   margin: auto;
-  align-items: center;
-  padding: 2rem;
+  padding: 0.5rem;
   flex-wrap: wrap;
+  ul {
+    display: flex;
+    flex: 1 1 20rem;
+    justify-content:space-evenly;
+    align-items: center;
+    list-style: none;
+  }
+  #logo {
+    flex: 2 1 40rem;
+    font-size: 2rem;
+  }
 }
 
-nav ul {
-  display: flex;
-  flex: 1 1 40rem;
-  justify-content: space-around;
-  align-items: center;
-  list-style: none;
-}
 
-#logo {
-  flex: 2 1 40rem;
-  font-size: 3rem;
-}
+// Showcase 
 
 .showcase {
-  background: linear-gradient(rgba(0,0,0,0.5),transparent),url('/img/landing-page.jpg');
-  min-height: 90vh;
+  background: linear-gradient(rgba(0,0,0,0.5),transparent),url('/img/girlfootie.jpg');
+  min-height: 70vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position:center;
@@ -90,22 +82,21 @@ nav ul {
   justify-content: center;
   align-items: center;
   text-align: center;
-}
-
-.showcase h3 {
-  padding:5rem;
+  h3 {
+    padding: 2rem;
+  }
 }
 
 // Benefits section
 
 #locations {
   min-height: 100vh;
-  background: linear-gradient(rgba(0,0,0,0.5), transparent), url("/img/new-york-page.png");
+  background: linear-gradient(rgba(0,0,0,0.2), transparent), url("/img/alex-KEEpi-SOM_s-unsplash.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
-  color: #333;
+  color: #eee;
   position: relative;
   overflow: hidden;
   pointer-events: none;
@@ -167,11 +158,12 @@ nav ul {
 }
 
 .card {
-  background: lightcoral;
   flex: 1 1 25rem;
   min-height: 40vh;
   margin: 2rem 5rem;
-  box-shadow: 0px 10px 10px
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  border-radius: 1rem;
 }
 
 .cards {
@@ -183,11 +175,92 @@ nav ul {
 }
 
 .cards img {
-  height: 100px;
+  max-width: 15%;
+  margin: 2rem;
+}
+.card h3 {
+padding-top: 5rem;
 }
 
+.cards-icon {
+  background: #d8dbdf;
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
 
+#contact {
+  min-height:50vh;
+  background: linear-gradient(rgba(0,0,0,0.5), transparent),url("/img/contact-mountain.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:5rem;
+}
 
+.form-wrapper {
+  background: rgba(19,28,39,0.7);
+  width: 50%;
+  color: white;
+  border-radius: 20px;
+}
+
+.form-head {
+  text-align: center;
+  padding: 4rem;
+}
+
+.name-form,
+.email-form {
+  padding: 1rem;
+  text-align: center;
+}
+
+form input {
+  width: 70%;
+}
+
+.form-wrapper label {
+  margin: 0rem 3rem;
+}
+
+.form-wrapper input {
+  padding: 1rem 2rem;
+}
+
+#contact button {
+  width: 100%;
+  padding: 2rem;
+  margin-top: 8rem;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+footer {
+  color: white;
+  background: rgba(19,28,39,1);
+}
+
+.footer-wrapper {
+  display: flex;
+  padding: 2rem;
+  width: 90%;
+  margin: auto;
+  min-height: 10vh;
+  align-items: center;
+
+}
+
+footer ul {
+  display: flex;
+  list-style: none;
+  flex: 1 1 40rem;
+  justify-content: space-between;
+  align-items: center;
+}
 
 @media screen and (max-width: 940px) {
   html {

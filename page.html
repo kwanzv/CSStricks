@@ -10,20 +10,23 @@
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Truculenta:wght@300&display=swap" rel="stylesheet">
-  <link rel="icon" href="icons/airplane.svg">
-  <title>Travelly | One stop shop for your next holiday</title>
+  <script src="https://kit.fontawesome.com/b26e37a259.js" crossorigin="anonymous"></script>
+  <title>SoccerWear | One stop shop for your next turfs</title>
 </head>
 
 <body>
 
   <header id="main-head">
     <nav>
-      <h1 id="logo">Travelly</h1>
+      <h1 id="logo"><i class="far fa-futbol"></i> SoccerWear</h1>
       <ul>
-        <li><a href="#locations">Locations</a></li>
-        <li><a href="#benefits">Benefits</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#locations" title="Store">Store</a></li>
+        <li><a href="#benefits" title="About">About</a></li>
+        <li><a href="#contact" title="Contact">Contact</a></li>
+        <a href="#checkout"> <i id="basket" class="fas fa-cart-arrow-down fa-lg"></i> Check out</a>
+        </li>
       </ul>
+
     </nav>
   </header>
 
@@ -31,27 +34,93 @@
     <section class="showcase">
       <div id="showcase-bg-image"></div>
       <div class="text-content" id="grid">
-        <h1>Travelley</h1>
-        <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse et omnis itaque ipsum quasi voluptates,
-          fugiat
-          accusamus assumenda debitis laudantium.</h3>
-        <button>Book now</button>
+        <h1><i class="far fa-futbol"></i>SoccerWear</h1>
+        <h3>Your personal guide to your dream sports shoes</h3>
+        <button>Shop now!</button>
       </div>
+    </section>
+
+
+    <section class="benefits">
+      <header class="benefits-head">
+        <h2> Scroll down to <i class="fas fa-arrow-down"></i></h2>
+        <p> Check out our promises</p>
+      </header>
+
+
+      <section id="locations">
+
+        <header class="locations-head">
+          <h1>Authenticity guaranteed</h1>
+          <h3>We only offer authentic Nike, Addidas and Puma footwear.</h3>
+          <img src="/img/cloud.png" class="moving-cloud-1 cloud" />
+          <img src="/img/cloud.png" class="moving-cloud-2 cloud" />
+        </header>
+
+      </section>
+
+
+      <div class="cards">
+        <div class="card">
+          <div class="cards-icon">
+            <i id="delivery" class="fas fa-truck fa-4x"></i>
+          </div>
+          <h3> Lorem ipsum dolor sit amet consectetur adipisicing elit
+          </h3>
+
+        </div>
+        <div class="card">
+          <div class="cards-icon">
+            <i class="fas fa-sync-alt fa-4x"></i>
+          </div>
+          <h3> Lorem ipsum dolor sit amet consectetur adipisicing elit
+            </h4>
+        </div>
+        <div class="card">
+          <div class="cards-icon">
+            <i class="fas fa-inbox fa-4x"></i>
+          </div>
+          <h3> Lorem ipsum dolor sit amet consectetur adipisicing elit
+          </h3>
+        </div>
+      </div>
+
     </section>
 
   </main>
 
-  <section id="locations">
+  <section id="contact">
+    <div class="form-wrapper">
 
-    <header class="locations-head">
-      <h1> Travel Tailored To You</h1>
-      <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-      <img src="/img/cloud.png" class="moving-cloud-1 cloud" />
-      <img src="/img/cloud.png" class="moving-cloud-2 cloud" />
-    </header>
+      <header class="form-head">
+        <h2>Contact us <i class="fas fa-address-book"></i></h2>
 
+      </header>
+      <form>
+        <div class="name-form">
+          <label for="name">Name:</label>
+          <input type="name" name="name" required>
+        </div>
+        <div class="email-form">
+          <label for="email">Email</label>
+          <input type="email" name="email" required>
+        </div>
+        <button type="submit"> Submit</button>
+      </form>
+    </div>
   </section>
 
+  <footer>
+    <div class="footer-wrapper">
+      <h5>Travelly &copy;</h5>
+      <ul>
+        <li>
+          <a href="#"><img src="/icons/youtube.svg">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
 
 </body>
 
