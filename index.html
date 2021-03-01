@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="We are a all inclusive travel agency that handles all your needs">
-  <link rel="stylesheet" href="soccerwear.css">
+  <link rel="stylesheet" href="/CSS/soccerwear.css">
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Truculenta:wght@300&display=swap" rel="stylesheet">
@@ -15,150 +15,109 @@
 </head>
 
 <body>
-
-  <header id="main-head">
-
-
+  <header>
     <nav>
       <h1 id="logo"><i class="far fa-futbol"></i> SoccerWear</h1>
       <ul>
-        <li><a href="#locations" title="Store">Store</a></li>
+        <li><a href="/products.html" title="Store">Store</a></li>
         <li><a href="#benefits" title="About">About</a></li>
         <li><a href="#contact" title="Contact">Contact</a></li>
-        <a href="#checkout"> <i id="basket" class="fas fa-cart-arrow-down fa-lg"></i> Check out</a>
+        <li><a href="#checkout"> <i id="basket" class="fas fa-cart-arrow-down fa-lg"></i> Check out</a>
         </li>
       </ul>
-
     </nav>
-
   </header>
 
   <main>
 
-    <section class="showcase">
-      <div class="container">
-
-        <div class="text-content" id="grid">
-          <h1 id="title"><i class="far fa-futbol"></i>SoccerWear</h1>
-          <h3>Your personal guide to your dream sports shoes</h3>
-          <button>Shop now!</button>
-
-        </div>
-        <i id="down" class="fas fa-chevron-down fa-8x"></i>
-    </section>
-    </div>
-
-    <section class="featured">
-      <div class="container">
-        <h2 class="section-title">Featured Products</h2>
-        <div class="split">
-          <a href="#" class="featured_item">
-            <img src="/img/addidas-removebg-preview.png" alt="">
-            <p class="featured_details"><span class="price">£30.99</span>Addidas X Tiempo</p>
-          </a>
-          <a href="" class="featured_item">
-            <img src="/img/predator-removebg-preview.png" alt="">
-            <p class="featured_details"><span class="price">£30.99</span>Addidas Predator</p>
-          </a>
-          <a href="" class="featured_item">
-            <img src="/img/puma-removebg-preview.png" alt="">
-            <p class="featured_details"><span class="price">£30.99</span> Reebok Majestic</p>
-          </a>
-        </div>
-      </div>
-
-    </section>
-
-
-    <section id="locations">
-      <div class="locations-head">
-        <h1>Authenticity guaranteed</h1>
+    <section id="showcase">
+      <div class="showcase-head">
+        <h1>Up your game with <br> SoccerWear</h1>
         <h3>We only offer authentic Nike, Addidas and Puma footwear.</h3>
         <img src="/img/cloud.png" class="moving-cloud-1 cloud" />
         <img src="/img/cloud.png" class="moving-cloud-2 cloud" />
       </div>
+
+      <span id="down">
+        <i class="fas fa-arrow-down fa-4x"></i>
+      </span>
+
     </section>
 
-
-    <section class="our-products">
+    <section class="featured">
       <div class="container">
-        <h2 class="section-title">Our products</h2>
-
-        <article class="product">
-          <img src="" alt="" class="product_image">
-          <h3 class="product_title"></h3>
-          <p class="product_description"></p>
-        </article>
-
-        <article class="product">
-          <img src="" alt="" class="product_image">
-          <h3 class="product_title"></h3>
-          <p class="product_description"></p>
-        </article>
-
-        <article class="product">
-          <img src="" alt="" class="product_image">
-          <h3 class="product_title"></h3>
-          <p class="product_description"></p>
-        </article>
+        <h2 class="featured-title">Featured Products</h2>
+        <div class="col-3">
+          <a href="#" class="featured-item">
+            <img src="/img/addidas-removebg-preview.png" alt="">
+            <p class="featured-details"><span class="price">£30.99</span>Addidas X Tiempo</p>
+          </a>
+          <a href="" class="featured-item">
+            <img src="/img/predator-removebg-preview.png" alt="">
+            <p class="featured-details"><span class="price">£30.99</span>Addidas Predator</p>
+          </a>
+          <a href="" class="featured-item">
+            <img src="/img/puma-removebg-preview.png" alt="">
+            <p class="featured-details"><span class="price">£30.99</span> Reebok Majestic</p>
+          </a>
+        </div>
       </div>
     </section>
 
-
     <section class="promises">
-      <div class="container">
+      <div class="container col-3">
         <div class="card">
           <div class="cards-icon">
             <i id="delivery" class="fas fa-truck fa-4x"></i>
           </div>
-          <h3> Lorem ipsum dolor sit amet consectetur adipisicing elit
-          </h3>
+          <h2> Free delivery in HCMC</h2>
+          <p> All purchases come with free delivery at your convenience</p>
 
         </div>
         <div class="card">
           <div class="cards-icon">
             <i class="fas fa-sync-alt fa-4x"></i>
           </div>
-          <h3> Lorem ipsum dolor sit amet consectetur adipisicing elit
-            </h4>
+          <h2> Satisfaction guaranteed</h2>
+          <p>If you're disappointed with any of our products, you can return for free ! </p>
         </div>
         <div class="card">
           <div class="cards-icon">
             <i class="fas fa-inbox fa-4x"></i>
           </div>
-          <h3> Lorem ipsum dolor sit amet consectetur adipisicing elit
-          </h3>
+          <h2> All products are authentic</h2>
+          <p> We only sell official Nike, Addidas and Puma products</p>
         </div>
       </div>
 
       </div>
     </section>
 
+    <section id="contact">
+      <div class="form-wrapper">
+        <header class="form-head">
+          <h2>Contact us <i class="fas fa-address-book"></i></h2>
+        </header>
+        <form class="contact">
+          <div class="name-form">
+            <label for="name">Name:</label>
+            <input type="name" name="name" required>
+          </div>
+          <div class="email-form">
+            <label for="email">Email</label>
+            <input type="email" name="email" required>
+          </div>
+          <button type="submit"> Submit</button>
+        </form>
+      </div>
+
+    </section>
+
   </main>
-
-  <section id="contact">
-    <div class="form-wrapper">
-      <header class="form-head">
-        <h2>Contact us <i class="fas fa-address-book"></i></h2>
-
-      </header>
-      <form>
-        <div class="name-form">
-          <label for="name">Name:</label>
-          <input type="name" name="name" required>
-        </div>
-        <div class="email-form">
-          <label for="email">Email</label>
-          <input type="email" name="email" required>
-        </div>
-        <button type="submit"> Submit</button>
-      </form>
-    </div>
-  </section>
 
   <footer>
     <div class="footer-wrapper">
-      <h5>SoccerWear &copy;</h5>
+      <h2>SoccerWear &copy;</h2>
       <ul>
         <li>
           <a href="#"><img src="/icons/youtube.svg">
@@ -167,6 +126,7 @@
       </ul>
     </div>
   </footer>
+
 
 </body>
 
